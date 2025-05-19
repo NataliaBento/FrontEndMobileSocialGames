@@ -11,7 +11,7 @@ export const useAuthStore = create((set) => ({
         
         set ({isLoading: true});
         try {
-            const response = await fetch("https://mobilesocialgames.onrender.com/api/auth/register", {
+            const response = await fetch("http://192.168.20.65:3000/api/auth/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
